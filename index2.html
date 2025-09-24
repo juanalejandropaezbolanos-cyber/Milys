@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños 21💙</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e8f1fa; /* Azul muy suave */
+      color: #2c3e50; /* Azul oscuro para texto */
+    }
+
+    header {
+      background: 
+        linear-gradient(135deg, rgba(58, 123, 213, 0.7), rgba(0, 210, 255, 0.7)), /* azul semitransparente */
+        url('banner.jpeg') center/cover no-repeat; /* imagen de fondo */
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4em;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #1a5276;
+    }
+
+    .section p {
+      font-size: 1.2em;
+      color: #34495e;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Carrusel */
+    .carousel {
+      position: relative;
+      width: 90%;
+      max-width: 1600px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      aspect-ratio: 3 / 2;
+      background-color: #fff;
+      padding: 15px;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .carousel img {
+      width: 33.33%;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+
+    /* QR Section */
+    .qr-section {
+      margin-top: 50px;
+      padding: 40px;
+      background: #f0f8ff;
+      border-radius: 15px;
+    }
+    .qr-section img {
+      width: 200px;
+      margin-top: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #3a7bd5;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 30px 30px 0 0;
+    }
+
+    /* Botón música */
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #1d6ad6;
+      color: #fff;
+      font-size: 2em;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    /* Corazones animados */
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      font-size: 2em;
+      color: #213ac7;
+      animation: rise 10s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(0.8);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Un Día Especial</h1>
+    <p>Nuestro Año Lleno de Recuerdos</p>
+
+    <!-- Corazones -->
+    <span class="heart" style="left:10%; animation-delay: 0s;">❤</span>
+    <span class="heart" style="left:30%; animation-delay: 2s; font-size:30px;">❤</span>
+    <span class="heart" style="left:50%; animation-delay: 4s; font-size:20px;">❤</span>
+    <span class="heart" style="left:70%; animation-delay: 1s; font-size:28px;">❤</span>
+    <span class="heart" style="left:90%; animation-delay: 3s; font-size:25px;">❤</span>
+  </header>
+
+  <!-- Sección texto -->
+  <section class="section">
+    <h2>Un Día Especial</h2>
+    <p>
+      Feliz cumpleaños, mi pochi. Hoy celebro mucho más que tus 21 años, 
+      celebro el privilegio de caminar contigo en esta vida. Conocerte ha sido 
+      el mejor regalo que Dios me pudo dar. Admiro tu fuerza, tu entrega y 
+      la forma en la que pones el corazón en todo lo que haces. Eres mi inspiración,
+      eres arte, eres esa chispa que transforma lo ordinario en algo mágico.
+      Deseo disfrutar mas años a tu lado llenos de alegrías y baches. Gracias por ser tú, 
+      por enseñarme tanto, por hacer de mi mundo un lugar más hermoso. 
+      Eres mi orgullo, mi compañía y mi felicidad. 
+      Te amo con todo mi corazón. 💙
+    </p>
+  </section>
+
+  <!-- Carrusel -->
+  <section class="section">
+    <h2>Momentos Únicos</h2>
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="foto1.jpeg" alt="Foto 1">
+        <img src="foto2.jpeg" alt="Foto 2">
+        <img src="foto3.jpeg" alt="Foto 3">
+        <img src="foto4.jpeg" alt="Foto 4">
+        <img src="foto5.jpeg" alt="Foto 5">
+        <img src="foto6.jpeg" alt="Foto 6">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Botón de música -->
+  <div id="musicBtn" class="floating-btn">&#9835;</div>
+
+  <!-- Audio -->
+  <audio id="backgroundAudio" loop>
+    <source src="Perfect - 320Kbps-(Mr-Jat.in).mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Botón música
+    const btn = document.getElementById('musicBtn');
+    const audio = document.getElementById('backgroundAudio');
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        btn.innerHTML = "⏸";
+      } else {
+        audio.pause();
+        btn.innerHTML = "&#9835;";
+      }
+    });
+
+    // Carrusel
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel img');
+    const carousel = document.querySelector('.carousel-images');
+    const totalImages = images.length;
+
+    function moveCarousel() {
+      currentIndex = (currentIndex + 1) % (totalImages - 2);
+      carousel.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+    }
+    setInterval(moveCarousel, 3000);
+  </script>
+</body>
+</html>
